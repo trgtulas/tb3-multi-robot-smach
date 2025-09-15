@@ -14,5 +14,5 @@ rosrun turtlebot3_smach master.py
 Create new job by publish message to `/station_order` topic:
 Ex:
 ```bash
-rostopic pub /staiton_order std_msgs/String "data: 'station1'"
+rostopic pub /station_order std_msgs/String "data: 'station1'"
 ```
