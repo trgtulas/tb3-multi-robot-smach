@@ -1,0 +1,3 @@
+string station_id
+string station_status
+Pose position

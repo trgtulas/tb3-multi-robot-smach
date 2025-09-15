@@ -1,0 +1,3 @@
+string robot_id
+string robot_status
+Pose waiting_location

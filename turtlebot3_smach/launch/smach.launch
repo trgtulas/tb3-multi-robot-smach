@@ -1,0 +1,19 @@
+<launch>
+    <group ns="robot1">
+        <node pkg="turtlebot3_smach" type="multi_smach.py" name="smach" output="screen">
+            <param name="robot_ns" value="robot1"/>
+        </node>
+    </group>
+    <group ns="robot2">
+        <node pkg="turtlebot3_smach" type="multi_smach.py" name="smach" output="screen">
+            <param name="robot_ns" value="robot2"/>
+        </node>
+    </group>
+    <group ns="robot3">
+        <node pkg="turtlebot3_smach" type="multi_smach.py" name="smach" output="screen">
+            <param name="robot_ns" value="robot3"/>
+        </node>
+    </group>
+</launch>
+
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+
+    <!-- Lighting & ground -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- A black line (thin box). Adjust size/pose as you like. -->
+    <model name="black_line">
+      <static>true</static>
+      <!-- slight z offset to avoid z-fighting with the ground -->
+      <pose>-2 -0.5 0.005 0 0 0</pose>
+      <link name="link">
+        <visual name="vis">
+          <geometry>
+            <!-- length x, width y, height z (meters) -->
+            <box><size>0.6 0.03 0.0001</size></box>
+          </geometry>
+          <material>
+            <ambient>0 0 0 1</ambient>
+            <diffuse>0 0 0 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+        <collision name="col">
+          <geometry>
+            <box><size>0.6 0.03 0.0001</size></box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+    </model>
+
+  </world>
+</sdf>
