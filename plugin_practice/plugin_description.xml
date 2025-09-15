@@ -1,7 +1,0 @@
-<library path="lib/libplugin_practice">
-  <class name="plugin_practice/DummyLocalPlanner"
-         type="plugin_practice::DummyLocalPlanner"
-         base_class_type="nav_core::BaseLocalPlanner">
-    <description>Dummy Local Planner Plugin</description>
-  </class>
-</library>
