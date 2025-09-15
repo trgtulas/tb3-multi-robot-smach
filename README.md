@@ -1,10 +1,10 @@
-Start simulation first:
+Run simulation first:
 
 ```bash
 roslaunch turtlebot_smach spawn_robots.launch
 roslaunch multi_navigation multi_turtlebot3_navigation.launch
 ```
-Start smach and master module:
+Run smach and master module:
 
 ```bash
 roslaunch turtlebot_smach smach.launch
